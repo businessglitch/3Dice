@@ -1,16 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 client/node_modules
 client/.pnp
 .pnp.js
-
 # testing
 client/coverage
-
 # production
 client/build
-
 # misc
 client/.DS_Store
 client/.env.local
@@ -23,3 +19,8 @@ client/yarn-debug.log*
 client/yarn-error.log*
 .vscode
 .DS_Store
+
+config/*.pyc
+settings/*.pyc
+server/*.pyc
+.pyc
