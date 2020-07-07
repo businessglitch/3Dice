@@ -24,3 +24,4 @@ config/*.pyc
 settings/*.pyc
 server/*.pyc
 .pyc
+server/.env
