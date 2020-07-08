@@ -11,6 +11,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "start-server": "cd .. && cd server && python app.py",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,5 +31,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy":"http://localhost:5000"
 }
