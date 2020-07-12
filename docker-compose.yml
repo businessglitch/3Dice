@@ -1,16 +1,26 @@
 version: '2'
 
 services:
-  website:
-    build: .
+  backend:
+    build: ./backend
     command: >
-      gunicorn -b 0.0.0.0:8000
+      gunicorn -b 0.0.0.0:5000
         --access-logfile -
         --reload
-        "server.app:create_app()"
+        "backend.app:create_app()"
     environment:
       PYTHONUNBUFFERED: 'true'
     volumes:
-      - '.:/server'
+      - '.:/backend'  
     ports:
-      - '8000:8000'
+      - '5000:5000'
+    
+    
+  frontend:
+    build: ./client
+    working_dir: /client
+    command: 'npm start'
+    stdin_open: true
+    ports: 
+      - '3000:3000'
+

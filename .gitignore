@@ -25,3 +25,9 @@ settings/*.pyc
 server/*.pyc
 .pyc
 server/.env
+
+# Python cache
+__pycache__
+
+#Venv Folder
+backend/venv

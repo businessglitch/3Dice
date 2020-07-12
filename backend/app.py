@@ -1,4 +1,5 @@
-from flask import Flask
+from flask import Flask, jsonify
+from flask_cors import CORS
 
 def create_app():
     """[Create a Flask application using the app factory patter]
@@ -7,6 +8,7 @@ def create_app():
     """
 
     app = Flask(__name__, instance_relative_config=True)
+    CORS(app)
 
     app.config.from_object('config.settings')
     app.config.from_pyfile('settings.py', silent=True)
@@ -15,6 +17,6 @@ def create_app():
     def index():
         """[]
         """
-        return 'Hello World!'
+        return jsonify({'name': 'Hello World!'})
 
     return app
