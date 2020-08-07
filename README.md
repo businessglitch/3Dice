@@ -46,8 +46,7 @@ $ docker-compose up --build
 
 ## Support
 
-Reach out to us at one of the following places!
-Fahad Hayat
+Reach out at the following platforms!
 - Instagram at <a href="https://www.instagram.com/fahoodii_h/" target="_blank">`@fahoodii_h`</a>
 - LinkedIn at <a href="https://www.linkedin.com/in/fahdhayat/" target="_blank">`Fahad Hayat`</a>
 
