@@ -4,5 +4,5 @@
 2. Having issues with docker not being able to read package.json file
     docker-compose example does not work #533 https://github.com/nodejs/docker-node/issues/533
 
-3. Frontend was exisiting with an error. (Currently code is running on development mode, will have to change it to production)
+3. Frontend was not being deployed and was exiting with an error. (Currently code is running on development mode, will have to change it to production)
     https://stackoverflow.com/questions/61837934/content-not-from-webpack-is-served-from-app-public-docker

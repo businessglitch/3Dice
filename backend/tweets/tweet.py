@@ -17,21 +17,22 @@ import re
 RE_EMOJI = re.compile('[\U00010000-\U0010ffff]', flags=re.UNICODE)
 
 class Tweet:
-    def __init__(self, 
-            id, 
-            username, 
-            user_screenname, 
-            text, 
-            created_at, 
-            retweeted, 
-            retweet_count, 
-            favourite_count, 
-            place_fullname, 
-            user_followers_count, 
-            user_statuses_count, 
-            user_location,
-            hashtag
-        ):
+
+    def __init__(self,
+        id,
+        username,
+        user_screenname,
+        text,
+        created_at,
+        retweeted,
+        retweet_count,
+        favourite_count,
+        place_fullname,
+        user_followers_count,
+        user_statuses_count,
+        user_location,
+        hashtag):
+
         self.id = id
         self.username = username
         self.user_screenname = user_screenname
@@ -97,17 +98,17 @@ class twitterSearch():
                 place = None
 
            
-            formattedTweet = Tweet(tweet["id_str"], 
-                                tweet["user"]["name"], 
-                                tweet["user"]["screen_name"], 
+            formattedTweet = Tweet(tweet["id_str"],
+                                tweet["user"]["name"],
+                                tweet["user"]["screen_name"],
                                 tweet["text"],
                                 tweet["created_at"], 
-                                tweet["retweeted"], 
+                                tweet["retweeted"],
                                 tweet["retweet_count"],
-                                tweet["favorite_count"], 
+                                tweet["favorite_count"],
                                 place, 
                                 tweet["user"]["followers_count"],
-                                tweet["user"]["statuses_count"], 
+                                tweet["user"]["statuses_count"],
                                 tweet["user"]["location"],
                                 word
                             )
@@ -135,28 +136,28 @@ class twitterSearch():
     def csvCreate(self, data):
        
         with open('tweetNew.csv', 'w') as writeFile:
-            # fields = [ "id", 
-            #     "username", 
-            #     "user_screenname", 
-            #     "text", 
-            #     "created_at", 
-            #     "retweeted", 
-            #     "retweet_count", 
-            #     "favourite_count", 
+            # fields = [ "id",
+            #     "username",
+            #     "user_screenname",
+            #     "text",
+            #     "created_at",
+            #     "retweeted",
+            #     "retweet_count",
+            #     "favourite_count",
             #     "place_fullname", 
-            #     "user_followers_count", 
-            #     "user_statuses_count", 
+            #     "user_followers_count",
+            #     "user_statuses_count",
             #     "user_location",
             #     "score",
             #     "sentimental",
             #     "subjectivity"]
 
-            fields = [ "user_screenname", 
+            fields = [ "user_screenname",
             "created_at",
-            "sentiment", 
+            "sentiment",
             "sent_score",
-            "text",               
-            "retweet_count", 
+            "text",
+            "retweet_count",
             "favourite_count"]
             writer = csv.writer(writeFile)
             writer.writerow(fields)

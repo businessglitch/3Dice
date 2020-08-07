@@ -31,3 +31,8 @@ __pycache__
 
 #Venv Folder
 backend/venv
+backend/.cache/
+backend/.env
+backend/3Dice_CLI.egg-info
+.cache/
+client/.env
