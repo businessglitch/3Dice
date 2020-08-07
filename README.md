@@ -10,9 +10,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 * [React](https://reactjs.org) - The web framework used
 * [Python/Flask](http://flask.pocoo.org/) - Backend framework
-* [Gunicorn](http://docs.gunicorn.org/en/stable/) -
-* [Celery](http://docs.celeryproject.org/en/latest/) -
-* [Redis](http://redis.io/) -
+* [Gunicorn](http://docs.gunicorn.org/en/stable/) - Python WSGI HTTP Server
+* [Celery](http://docs.celeryproject.org/en/latest/) - Background job scheduler
+* [Redis](http://redis.io/) - Used for chache
 * [PostgreSQL](http://www.postgresql.org/) - Database
 * [Stripe](https://stripe.com/) - 3rd party Payment System
 * [Docker](https://www.docker.com/) - 3rd party Payment System
@@ -25,6 +25,10 @@ Ensure you have dockers setup
 #### Clone
 
 - Clone this repo to your local machine using `https://github.com/businessglitch/3Dice.git`
+
+#### Demo
+
+- Will be hosted soon
 
 #### Setup
 > move into the project directory
