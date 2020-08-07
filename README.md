@@ -34,7 +34,7 @@ Ensure you have dockers setup
 > move into the project directory
 
 ```shell
-$ cd data-gem
+$ cd 3Dice
 ```
 
 > run the dockers .yml file
