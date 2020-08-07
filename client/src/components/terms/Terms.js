@@ -5,11 +5,11 @@ function Terms() {
     return (
         <div>
             <p>
-                By using the Snake Eyes ("service"), you are agreeing to be bound by the
+                By using the 3Dice ("service"), you are agreeing to be bound by the
                 following terms and conditions ("terms of service").
              </p>
             <p>
-                Snake Eyes, LLC ("company") reserves the right to update and change these
+                3Dice, LLC ("company") reserves the right to update and change these
                 terms of service without notice.
             </p>
             <p>
@@ -142,7 +142,7 @@ function Terms() {
                 that is available via the service.
             </p>
             <p>
-                The look and feel of the service is copyright&copy; Snake Eyes, LLC.
+                The look and feel of the service is copyright&copy; 3Dice, LLC.
                 All rights reserved. You may not duplicate, copy, or reuse any portion
                 of the HTML, CSS, JavaScript, or visual design elements without express
                 written permission from the company.
