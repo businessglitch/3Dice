@@ -1,26 +1,24 @@
 # 3Dice
-3Dice is a simple gambling game made for learning purposes. The goal was to learn dockers, Flask, Celery/Redis, and Strip API integrations
-  {Place architecture diagram here}
+3Dice is a simple gambling game made for learning purposes. The goal was to learn dockers, Flask, Celery/Redis and Stripe API integrations. 
+This is a work in progress.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### Built With
 
-* [React](https://reactjs.org) - The web framework used
-* [Python/Flask](http://flask.pocoo.org/) - Backend framework
+* [React](https://reactjs.org) - Frontend Framework
+* [Python/Flask](http://flask.pocoo.org/) - Flask used for handling RESTful API calls
 * [Gunicorn](http://docs.gunicorn.org/en/stable/) - Python WSGI HTTP Server
 * [Celery](http://docs.celeryproject.org/en/latest/) - Background job scheduler
-* [Redis](http://redis.io/) - Used for chache
+* [Redis](http://redis.io/) - Redis used to save data in cache
 * [PostgreSQL](http://www.postgresql.org/) - Database
-* [Stripe](https://stripe.com/) - 3rd party Payment System
-* [Docker](https://www.docker.com/) - 3rd party Payment System
-* [Twitter](https://www.t.com/home) - Twitter API used to provide data for analysis
+* [Stripe](https://stripe.com/) - 3rd party payment system integration
+* [Docker](https://www.docker.com/) - Deploying the application
 
 
 ### Prerequisites
-Ensure you have dockers setup
+- Ensure you have dockers installed and setup
 
 #### Clone
 
